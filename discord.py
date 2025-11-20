@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 from discord.ui import Button, View, Modal, TextInput
 
-intents = discord.Intents.default()
+intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 class MyModal(Modal):
